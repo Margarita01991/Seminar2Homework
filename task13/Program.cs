@@ -3,12 +3,24 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 string numberText = Convert.ToString(number);
+if (number > 0)
 
-if (numberText.Length > 2)
+  if (numberText.Length > 2)
+  {
+   Console.WriteLine("третья цифра -> " + numberText[2]);
+  }
+  else 
+  {
+    Console.WriteLine("-> третьей цифры нет");
+  }
+else
 {
-  Console.WriteLine("третья цифра -> " + numberText[2]);
-}
-else 
-{
-  Console.WriteLine("-> третьей цифры нет");
+  if (numberText.Length > 2)
+  {
+   Console.WriteLine("третья цифра -> " + numberText[3]);
+  }
+  else 
+  {
+    Console.WriteLine("-> третьей цифры нет");
+  }
 }
