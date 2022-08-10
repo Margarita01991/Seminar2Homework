@@ -15,7 +15,7 @@ if (number > 0)
   }
 else
 {
-  if (numberText.Length > 2)
+  if (numberText.Length > 3)
   {
    Console.WriteLine("третья цифра -> " + numberText[3]);
   }
