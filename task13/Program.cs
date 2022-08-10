@@ -15,7 +15,7 @@ if (number > 0)
   }
 else
 {
-  if (numberText.Length > 3)
+  if (numberText.Length > 3) //исправлено с 2 на 3, при вводе отрицательного двузначного числа была ошибка
   {
    Console.WriteLine("третья цифра -> " + numberText[3]);
   }
